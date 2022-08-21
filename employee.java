@@ -50,6 +50,7 @@ public class employee {
             fw2.close();
             FileReader fr = new FileReader("emp2.txt");
             int i;
+            System.out.println("The Sorted employe list is:");
             while((i = fr.read())!=-1){
                 System.out.print((char)i);
             }
