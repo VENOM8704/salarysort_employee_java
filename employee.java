@@ -48,6 +48,12 @@ public class employee {
                 }
             }    
             fw2.close();
+            FileReader fr = new FileReader("emp2.txt");
+            int i;
+            while((i = fr.read())!=-1){
+                System.out.print((char)i);
+            }
+            fr.close();
         }
         catch(Exception e){
             e.printStackTrace();
